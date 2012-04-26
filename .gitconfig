@@ -1,0 +1,31 @@
+[core]
+	quotepath = false
+
+[alias]
+	st = status
+	ci = commit
+	co = checkout
+	br = branch
+	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cblue- %an %Cgreen(%cr)%Creset' --abbrev-commit --date=relative --date-order
+	lgs = log --stat --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cblue- %an %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+[color]
+	branch = auto
+	diff = auto
+	interactive = auto
+	status = auto
+[core]
+	editor = subl
+	autocrlf = input
+[push]
+	default = current
+[difftool "Kaleidoscope"]
+	cmd = ksdiff-wrapper git \"$LOCAL\" \"$REMOTE\"
+[difftool]
+	prompt = false
+[diff]
+	tool = Kaleidoscope
+[user]
+	name = Jim Rollenhagen
+	email = jim@jimrollenhagen.com
+[github]
+	user = jimrollenhagen
