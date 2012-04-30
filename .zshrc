@@ -46,5 +46,3 @@ source /usr/local/bin/virtualenvwrapper.sh
 export DYLD_LIBRARY_PATH="/usr/local/mysql/lib/:$DYLD_LIBRARY_PATH"
 
 function git(){hub "$@"}
-
-source /Users/jim/.pythonbrew/etc/bashrc
