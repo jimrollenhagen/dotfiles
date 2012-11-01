@@ -60,3 +60,5 @@ source ~/.zprompt
 setopt PROMPT_SUBST
 PROMPT='$(prompt)'
 PS2='$(prompt2)'
+
+export TERM=xterm-256color
