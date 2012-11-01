@@ -2,6 +2,7 @@
 	quotepath = false
 
 [alias]
+	pr = pull --rebase
 	st = status
 	ci = commit
 	co = checkout

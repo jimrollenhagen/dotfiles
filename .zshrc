@@ -5,12 +5,22 @@ ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="wedisagree"
+ZSH_THEME=""
 
 # Example aliases
-alias zshconfig="mate ~/.zshrc"
-alias ohmyzsh="mate ~/.oh-my-zsh"
-alias djsh="./manage.py shell_plus --bpython"
+alias zshconfig='subl ~/.zshrc'
+alias ohmyzsh='subl ~/.oh-my-zsh'
+alias djsh='./manage.py shell_plus'
+alias djcelery='./manage.py celeryd worker --loglevel=info'
+alias migrate='./manage.py migrate; say "Your migrations are complete, master."'
+alias drc='cd /Users/jim/code/drchrono-web && workon drc'
+alias get-prod-db='cd /Users/jim/code/deploy && python dbcrypt.py download `python dbcrypt.py list | tail -2 | head -1`'
+alias sync='git pull --rebase && git push'
+
+# hub wraps git
+function git(){hub "$@"}
+# code review for a commit
+function cr(){hub browse -- commit/$1}
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
@@ -30,12 +40,13 @@ alias djsh="./manage.py shell_plus --bpython"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git)
+plugins=(git django zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
+setopt NO_NOMATCH
 
 # Customize to your needs...
-export PATH=/Users/jim/virtualenvs/drc/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/mysql/bin:/usr/local/sbin
+export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/local/mysql/bin:/usr/local/sbin:/Users/jim/code/android-sdk-macosx/tools:/Users/jim/code/android-sdk-macosx/platform-tools:/usr/local/share/npm/bin:/opt/chef/bin
 
 # virtualenv(wrapper)
 export WORKON_HOME=~/virtualenvs
@@ -45,6 +56,7 @@ source /usr/local/bin/virtualenvwrapper.sh
 
 export DYLD_LIBRARY_PATH="/usr/local/mysql/lib/:$DYLD_LIBRARY_PATH"
 
-function git(){hub "$@"}
-
-source /Users/jim/.pythonbrew/etc/bashrc
+source ~/.zprompt
+setopt PROMPT_SUBST
+PROMPT='$(prompt)'
+PS2='$(prompt2)'
