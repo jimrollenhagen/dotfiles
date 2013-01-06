@@ -58,5 +58,7 @@ export DYLD_LIBRARY_PATH="/usr/local/mysql/lib/:$DYLD_LIBRARY_PATH"
 
 source ~/.zprompt
 setopt PROMPT_SUBST
+setopt extendedglob
+setopt nonomatch
 PROMPT='$(prompt)'
 PS2='$(prompt2)'
