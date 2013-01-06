@@ -46,7 +46,7 @@ source $ZSH/oh-my-zsh.sh
 setopt NO_NOMATCH
 
 # Customize to your needs...
-export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/local/mysql/bin:/usr/local/sbin:/Users/jim/code/android-sdk-macosx/tools:/Users/jim/code/android-sdk-macosx/platform-tools:/usr/local/share/npm/bin:/opt/chef/bin
+export PATH=$(brew --prefix josegonzalez/php/php54)/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/local/mysql/bin:/usr/local/sbin:/Users/jim/code/android-sdk-macosx/tools:/Users/jim/code/android-sdk-macosx/platform-tools:/usr/local/share/npm/bin:/opt/chef/bin
 
 # virtualenv(wrapper)
 export WORKON_HOME=~/virtualenvs
