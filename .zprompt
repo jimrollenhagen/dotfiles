@@ -43,9 +43,9 @@ promptDate () {
 
 promptCwd () {
     local cwd="$(print -P %~)"
-    local pwd=$(pwd)
-    local h="$(basename $cwd)"
-    local t="$(dirname $cwd)"
+    local pwd="$(pwd)"
+    local h="$(basename "$cwd")"
+    local t="$(dirname "$cwd")"
     if [[ $t == '.' || ( $t == '/' && $h == '/' ) ]]; then
     t=''
     elif [[ $t == '/' ]]; then
