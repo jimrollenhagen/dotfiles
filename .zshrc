@@ -62,3 +62,5 @@ setopt extendedglob
 setopt nonomatch
 PROMPT='$(prompt)'
 PS2='$(prompt2)'
+
+export TERM=xterm-256color
