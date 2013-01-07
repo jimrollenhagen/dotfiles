@@ -1,19 +1,38 @@
 {
-	"color_scheme": "Packages/User/IR_Black.tmTheme",
-	"theme": "Soda Dark.sublime-theme",
+	"auto_complete": false,
+	"color_scheme": "Packages/User/Tomorrow-Night-Bright.tmTheme",
+	"find_selected_text": true,
+	"fold_buttons": false,
 	"font_face": "Monaco",
+	"font_options":
+	[
+		"subpixel_antialias"
+	],
 	"font_size": 12,
 	"highlight_line": true,
-	"wide_caret": true,
-
-	"auto_complete": false,
-	"tab_size": 4,
-	"translate_tabs_to_spaces": true,
-	"use_tab_stops": true,
-
 	"ignored_packages":
 	[
-		"SublimeCodeIntel",
-		"IndentGuides"
-	]
+		"IndentGuides",
+		"SublimeCodeIntel"
+	],
+	"pylinter": {
+		"python_bin": "/Users/jim/virtualenvs/drc/bin/python",
+		"python_path": [
+			"/Users/jim/code/drchrono-web/"
+		],
+		"pylint_path": "/Users/jim/virtualenvs/drc/lib/python2.7/site-packages/pylint/lint.py",
+		"pylint_rc": "/Users/jim/.pylintrc",
+		"run_on_save": true,
+		"use_icons": true
+	},
+	"rulers":
+	[
+		72,
+		79
+	],
+	"tab_size": 4,
+	"theme": "Soda Dark.sublime-theme",
+	"translate_tabs_to_spaces": true,
+	"use_tab_stops": true,
+	"wide_caret": true
 }
