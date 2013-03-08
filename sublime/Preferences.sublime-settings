@@ -8,20 +8,22 @@
 	[
 		"subpixel_antialias"
 	],
-	"font_size": 12,
+	"font_size": 12.0,
 	"highlight_line": true,
 	"ignored_packages":
 	[
 		"IndentGuides",
 		"SublimeCodeIntel"
 	],
-	"pylinter": {
-		"python_bin": "/Users/jim/virtualenvs/drc/bin/python",
-		"python_path": [
-			"/Users/jim/code/drchrono-web/"
-		],
+	"pylinter":
+	{
 		"pylint_path": "/Users/jim/virtualenvs/drc/lib/python2.7/site-packages/pylint/lint.py",
 		"pylint_rc": "/Users/jim/.pylintrc",
+		"python_bin": "/Users/jim/virtualenvs/drc/bin/python",
+		"python_path":
+		[
+			"/Users/jim/code/drchrono-web/"
+		],
 		"run_on_save": true,
 		"use_icons": true
 	},
