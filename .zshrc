@@ -14,8 +14,9 @@ alias djsh='./manage.py shell_plus'
 alias djcelery='./manage.py celeryd worker --loglevel=info'
 alias migrate='./manage.py migrate; say "Your migrations are complete, master."'
 alias drc='cd /Users/jim/code/drchrono-web && workon drc'
-alias get-prod-db='cd /Users/jim/code/deploy && python dbcrypt.py download `python dbcrypt.py list | tail -2 | head -1`'
 alias sync='git pull --rebase && git push'
+alias ipy='ipython'
+alias nb='cd /Users/jim/code/notebooks && ipython notebook'
 
 # hub wraps git
 function git(){hub "$@"}
