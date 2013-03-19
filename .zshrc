@@ -55,7 +55,8 @@ export PIP_VIRTUALENV_BASE=$WORKON_HOME
 export PIP_RESPECT_VIRTUALENV=true
 source /usr/local/bin/virtualenvwrapper.sh
 
-export DYLD_LIBRARY_PATH="/usr/local/mysql/lib/:$DYLD_LIBRARY_PATH"
+# don't care about mysql anymore :)
+#export DYLD_LIBRARY_PATH="/usr/local/mysql/lib/:$DYLD_LIBRARY_PATH"
 
 source ~/.zprompt
 setopt PROMPT_SUBST
@@ -65,3 +66,5 @@ PROMPT='$(prompt)'
 PS2='$(prompt2)'
 
 export TERM=xterm-256color
+
+export PGHOST=/tmp
