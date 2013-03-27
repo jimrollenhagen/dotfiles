@@ -13,10 +13,10 @@ alias ohmyzsh='subl ~/.oh-my-zsh'
 alias djsh='./manage.py shell_plus'
 alias djcelery='./manage.py celeryd worker --loglevel=info'
 alias migrate='./manage.py migrate; say "Your migrations are complete, master."'
-alias drc='cd /Users/jim/code/drchrono-web && workon drc'
 alias sync='git pull --rebase && git push'
 alias ipy='ipython'
 alias nb='cd /Users/jim/code/notebooks && ipython notebook'
+alias zc='cd /Users/jim/code/zerocater && workon zc'
 
 # hub wraps git
 function git(){hub "$@"}
@@ -68,3 +68,6 @@ PS2='$(prompt2)'
 export TERM=xterm-256color
 
 export PGHOST=/tmp
+
+bindkey "^[^[[C" forward-word
+bindkey "^[^[[D" backward-word
