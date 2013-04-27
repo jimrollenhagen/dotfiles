@@ -8,8 +8,8 @@ ZSH=$HOME/.oh-my-zsh
 ZSH_THEME=""
 
 # Example aliases
-alias zshconfig='subl ~/.zshrc'
-alias ohmyzsh='subl ~/.oh-my-zsh'
+alias zshconfig='vim ~/.zshrc'
+alias ohmyzsh='vim ~/.oh-my-zsh'
 alias djsh='./manage.py shell_plus'
 alias djcelery='./manage.py celeryd worker --loglevel=info'
 alias migrate='./manage.py migrate; say "Your migrations are complete, master."'
@@ -41,7 +41,7 @@ function cr(){hub browse -- commit/$1}
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git django zsh-syntax-highlighting)
+plugins=(git django zsh-syntax-highlighting tmux)
 
 source $ZSH/oh-my-zsh.sh
 setopt NO_NOMATCH
