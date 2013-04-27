@@ -1,0 +1,4 @@
+--ignore-dir=migrations
+--ignore-dir=hashes
+--type-set=handlebars=.tpl
+

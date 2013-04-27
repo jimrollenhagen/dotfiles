@@ -13,10 +13,10 @@ alias ohmyzsh='subl ~/.oh-my-zsh'
 alias djsh='./manage.py shell_plus'
 alias djcelery='./manage.py celeryd worker --loglevel=info'
 alias migrate='./manage.py migrate; say "Your migrations are complete, master."'
-alias drc='cd /Users/jim/code/drchrono-web && workon drc'
 alias sync='git pull --rebase && git push'
 alias ipy='ipython'
 alias nb='cd /Users/jim/code/notebooks && ipython notebook'
+alias zc='cd /Users/jim/code/zerocater && workon zc'
 
 # hub wraps git
 function git(){hub "$@"}
@@ -47,24 +47,27 @@ source $ZSH/oh-my-zsh.sh
 setopt NO_NOMATCH
 
 # Customize to your needs...
-export PATH=$(brew --prefix josegonzalez/php/php54)/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/local/mysql/bin:/usr/local/sbin:/Users/jim/code/android-sdk-macosx/tools:/Users/jim/code/android-sdk-macosx/platform-tools:/usr/local/share/npm/bin:/opt/chef/bin
+export PATH=$(brew --prefix josegonzalez/php/php54)/bin:/Users/jim/Library/Python/2.7/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/local/mysql/bin:/usr/local/sbin:/Users/jim/code/android-sdk-macosx/tools:/Users/jim/code/android-sdk-macosx/platform-tools:/usr/local/share/npm/bin:/opt/chef/bin
 
 # virtualenv(wrapper)
 export WORKON_HOME=~/virtualenvs
 export PIP_VIRTUALENV_BASE=$WORKON_HOME
 export PIP_RESPECT_VIRTUALENV=true
+VIRTUAL_ENV_DISABLE_PROMPT=1
 source /usr/local/bin/virtualenvwrapper.sh
 
 # don't care about mysql anymore :)
 #export DYLD_LIBRARY_PATH="/usr/local/mysql/lib/:$DYLD_LIBRARY_PATH"
 
-source ~/.zprompt
+#source ~/.zprompt
+. /Users/jim/Library/Python/2.7/lib/python/site-packages/powerline/bindings/zsh/powerline.zsh
 setopt PROMPT_SUBST
 setopt extendedglob
 setopt nonomatch
-PROMPT='$(prompt)'
-PS2='$(prompt2)'
+#PROMPT='$(prompt)'
+#PS2='$(prompt2)'
 
 export TERM=xterm-256color
 
-export PGHOST=/tmp
+bindkey "^[^[[C" forward-word
+bindkey "^[^[[D" backward-word
