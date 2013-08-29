@@ -28,7 +28,7 @@ CHECKS = [
     },
     {
         'output': 'Running pylint (errors only)...',
-        'command': r'! pylint \'--msg-template="{path}:{line}: [{msg_id}] {msg}" -r n\' %s | grep "\[E"',
+        'command': r'! pylint --msg-template="{path}:{line}: [{msg_id}] {msg}" -r n %s | grep "\[E"',
         'match_files': ['\.py$'],
         'ignore_files': ['.*pre-commit'],
         'print_filename': False,
