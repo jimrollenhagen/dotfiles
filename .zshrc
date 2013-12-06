@@ -24,7 +24,7 @@ function git(){hub "$@"}
 function cr(){hub browse -- commit/$1}
 
 # Set to this to use case-sensitive completion
-# CASE_SENSITIVE="true"
+CASE_SENSITIVE="true"
 
 # Comment this out to disable weekly auto-update checks
 # DISABLE_AUTO_UPDATE="true"
@@ -33,7 +33,7 @@ function cr(){hub browse -- commit/$1}
 # DISABLE_LS_COLORS="true"
 
 # Uncomment following line if you want to disable autosetting terminal title.
-# DISABLE_AUTO_TITLE="true"
+DISABLE_AUTO_TITLE="true"
 
 # Uncomment following line if you want red dots to be displayed while waiting for completion
 # COMPLETION_WAITING_DOTS="true"
@@ -71,3 +71,4 @@ export TERM=screen-256color
 
 bindkey "^[^[[C" forward-word
 bindkey "^[^[[D" backward-word
+alias bower='noglob bower'
