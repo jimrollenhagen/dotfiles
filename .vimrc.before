@@ -2,5 +2,5 @@ call janus#disable_plugin('nerdtree')
 let g:loaded_netrw        = 1 " Disable netrw
 let g:loaded_netrwPlugin  = 1 " Disable netrw
 
-set rtp+=/Users/jim/Library/Python/2.7/lib/python/site-packages/powerline/bindings/vim
+set rtp+=$POWERLINE/bindings/vim
 
