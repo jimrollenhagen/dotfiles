@@ -1,2 +1,4 @@
+config/nvim
+gitconfig
 oh-my-zsh
 zshrc

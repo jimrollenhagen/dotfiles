@@ -1,3 +1,12 @@
 [submodule "oh-my-zsh"]
 	path = oh-my-zsh
 	url = git://github.com/robbyrussell/oh-my-zsh.git
+[submodule "config/nvim/bundle/vim-pathogen"]
+	path = config/nvim/bundle/pathogen
+	url = git://github.com/tpope/vim-pathogen
+[submodule "config/nvim/bundle/neovim-colors-solarized-truecolor-only"]
+	path = config/nvim/bundle/solarized
+	url = git://github.com/frankier/neovim-colors-solarized-truecolor-only
+[submodule "config/nvim/bundle/fzf.vim"]
+	path = config/nvim/bundle/fzf.vim
+	url = git://github.com/junegunn/fzf.vim
