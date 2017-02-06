@@ -1,0 +1,6 @@
+dotfiles.
+
+Installation
+============
+
+Run ``rake``.

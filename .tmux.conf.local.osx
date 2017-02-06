@@ -1,3 +1,0 @@
-# clipboard!
-bind y run-shell "reattach-to-user-namespace -l zsh -c 'tmux show-buffer | pbcopy'"
-set-option -g default-command "reattach-to-user-namespace -l zsh"
