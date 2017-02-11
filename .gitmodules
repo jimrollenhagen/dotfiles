@@ -10,3 +10,6 @@
 [submodule "config/nvim/bundle/fzf.vim"]
 	path = config/nvim/bundle/fzf.vim
 	url = git://github.com/junegunn/fzf.vim
+[submodule "config/nvim/bundle/rust.vim"]
+	path = config/nvim/bundle/rust.vim
+	url = git://github.com/rust-lang/rust.vim
