@@ -13,3 +13,12 @@
 [submodule "config/nvim/bundle/rust.vim"]
 	path = config/nvim/bundle/rust.vim
 	url = git://github.com/rust-lang/rust.vim
+[submodule "config/nvim/bundle/syntastic"]
+	path = config/nvim/bundle/syntastic
+	url = https://github.com/vim-syntastic/syntastic.git
+[submodule "config/nvim/bundle/vim-jsx"]
+	path = config/nvim/bundle/vim-jsx
+	url = https://github.com/mxw/vim-jsx
+[submodule "config/nvim/bundle/vim-javascript"]
+	path = config/nvim/bundle/vim-javascript
+	url = https://github.com/pangloss/vim-javascript.git

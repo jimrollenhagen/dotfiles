@@ -15,6 +15,7 @@ alias zshconfig='vim ~/.zshrc'
 alias ohmyzsh='vim ~/.oh-my-zsh'
 alias ipy='ipython'
 alias :q='exit'
+alias vim='nvim'
 
 function weather { curl http://wttr.in/$1 }
 
@@ -29,5 +30,8 @@ source /usr/bin/virtualenvwrapper.sh
 
 export EDITOR=vim
 
-envoy -t ssh-agent
-source <(envoy -p)
+#envoy -t ssh-agent
+#source <(envoy -p)
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+export FZF_DEFAULT_COMMAND='ag -g ""'
