@@ -15,7 +15,7 @@
   interactive = auto
   status = auto
 [core]
-  editor = vim
+  editor = nvim
   autocrlf = input
 [push]
   default = current

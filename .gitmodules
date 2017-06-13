@@ -22,3 +22,6 @@
 [submodule "config/nvim/bundle/vim-javascript"]
 	path = config/nvim/bundle/vim-javascript
 	url = https://github.com/pangloss/vim-javascript.git
+[submodule "config/nvim/bundle/vim-scala"]
+	path = config/nvim/bundle/vim-scala
+	url = git@github.com:derekwyatt/vim-scala
