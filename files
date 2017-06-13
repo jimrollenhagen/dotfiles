@@ -1,5 +1,4 @@
 config/nvim
-config/sway
 gitconfig
 oh-my-zsh
 tmux.conf
