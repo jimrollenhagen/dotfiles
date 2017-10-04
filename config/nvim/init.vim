@@ -1,4 +1,5 @@
-source ~/.fzf/plugin/fzf.vim
+set rtp+=/usr/local/opt/fzf
+source /usr/local/opt/fzf/plugin/fzf.vim
 
 runtime bundle/pathogen/autoload/pathogen.vim
 execute pathogen#infect()
@@ -23,6 +24,9 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 
+" case insensitive search
+set ignorecase
+
 au FileType javascript set tabstop=2
 au FileType javascript set shiftwidth=2
 
@@ -41,7 +45,13 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+let g:syntastic_python_checkers = ['flake8']
 let g:syntastic_javascript_checkers = ['eslint']
 
 let g:javascript_plugin_flow = 1
 let g:jsx_ext_required = 0
+
+let g:deoplete#enable_at_startup = 1
+inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
+inoremap <expr><S-TAB>  pumvisible() ? "\<C-p>" : "\<S-TAB>"
+autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | pclose | endif

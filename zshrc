@@ -20,13 +20,15 @@ alias vim='nvim'
 function weather { curl http://wttr.in/$1 }
 
 export TERM=screen-256color
+export PATH=${HOME}/bin:${HOME}/Library/Python/3.6/bin:${HOME}/Library/Python/2.7/bin:$PATH
 
 # virtualenv(wrapper)
 export WORKON_HOME=$HOME/virtualenvs
 export PIP_VIRTUALENV_BASE=$WORKON_HOME
 export PIP_RESPECT_VIRTUALENV=true
 VIRTUAL_ENV_DISABLE_PROMPT=1
-source /usr/bin/virtualenvwrapper.sh
+#source /usr/bin/virtualenvwrapper.sh
+source /Users/jim/Library/Python/2.7/bin/virtualenvwrapper.sh
 
 export EDITOR=vim
 
