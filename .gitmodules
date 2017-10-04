@@ -25,3 +25,9 @@
 [submodule "config/nvim/bundle/vim-scala"]
 	path = config/nvim/bundle/vim-scala
 	url = git@github.com:derekwyatt/vim-scala
+[submodule "config/nvim/bundle/deoplete.nvim"]
+	path = config/nvim/bundle/deoplete.nvim
+	url = git@github.com:Shougo/deoplete.nvim
+[submodule "config/nvim/bundle/deoplete-jedi"]
+	path = config/nvim/bundle/deoplete-jedi
+	url = git@github.com:zchee/deoplete-jedi
