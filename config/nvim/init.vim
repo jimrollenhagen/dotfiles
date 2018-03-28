@@ -1,5 +1,5 @@
-set rtp+=/usr/local/opt/fzf
-source /usr/local/opt/fzf/plugin/fzf.vim
+set rtp+=~/.fzf
+source ~/.fzf/plugin/fzf.vim
 
 runtime bundle/pathogen/autoload/pathogen.vim
 execute pathogen#infect()
@@ -9,7 +9,7 @@ syntax on
 filetype plugin indent on
 
 " colors
-set termguicolors
+" set termguicolors
 set background=dark
 colorscheme solarized
 
@@ -38,15 +38,7 @@ au FileType py set textwidth=79
 nnoremap <c-p> :FZF<cr>
 
 set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
-
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
-let g:syntastic_python_checkers = ['flake8']
-let g:syntastic_javascript_checkers = ['eslint']
 
 let g:javascript_plugin_flow = 1
 let g:jsx_ext_required = 0
