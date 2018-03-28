@@ -1,4 +1,5 @@
 config/nvim
+fzf
 gitconfig
 oh-my-zsh
 tmux.conf

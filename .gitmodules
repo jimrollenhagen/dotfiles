@@ -31,3 +31,6 @@
 [submodule "config/nvim/bundle/deoplete-jedi"]
 	path = config/nvim/bundle/deoplete-jedi
 	url = git@github.com:zchee/deoplete-jedi
+[submodule "fzf"]
+	path = fzf
+	url = https://github.com/junegunn/fzf
